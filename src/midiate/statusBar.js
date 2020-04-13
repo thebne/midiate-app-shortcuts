@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Note } from "@tonaljs/tonal"
 import { getIsActive, setIsActive } from '../active'
 import { register, unregister, focusByNote, clickByNote } from '../mutator'

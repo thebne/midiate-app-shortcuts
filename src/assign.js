@@ -3,7 +3,7 @@ import { Midi } from "@tonaljs/tonal"
 const NOTES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'Bb', 'C#', 'Eb', 'F#', 'G#']
 const hashNote = n => Midi.toMidi(`${n}1`)
 
-export default assignedNotes = {}
+let assignedNotes = {}
 
 export const assignNote = (element) => {
   for (const [noteMidi, [e,]] of Object.entries(assignedNotes)) {
@@ -24,3 +24,5 @@ export const assignNote = (element) => {
   assignedNotes[hashNote(note)] = [element, vis]
   return [note, vis]
 }
+
+export default assignedNotes
