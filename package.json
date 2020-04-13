@@ -1,7 +1,7 @@
 {
   "name": "@midiate/app-shortcuts",
   "description": "MIDIate-compatible automatic on-screen keys shortcuts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Omer Perry",
   "license": "MIT",
   "respository": {
