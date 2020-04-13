@@ -1,10 +1,10 @@
 import { Midi } from "@tonaljs/tonal"
 
 const NOTES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'Bb', 'C#', 'Eb', 'F#', 'G#']
-const hashNote = n => Midi.toMidi(`${n}1`)
 
 let assignedNotes = {}
 
+export const hashNote = n => Midi.toMidi(`${n}1`)
 export const assignNote = (element) => {
   for (const [noteMidi, [e,]] of Object.entries(assignedNotes)) {
     // check if it's still active and clean if needed

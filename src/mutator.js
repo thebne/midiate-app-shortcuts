@@ -1,5 +1,6 @@
-import assignedNotes, { assignNote } from './assign'
+import assignedNotes, { assignNote, hashNote } from './assign'
 import { getIsActive, setIsActive } from './active'
+import styles from './style.module.css'
 
 const ColorHash = require('color-hash')
 const colorHash = new ColorHash({lightness: .7})
